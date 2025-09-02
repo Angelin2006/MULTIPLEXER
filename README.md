@@ -26,7 +26,6 @@ Under "Simulation", modify the Run Time (e.g., set to 1000ns).<br>
 
 **Logic Diagram:** <br>
 <br>
-
 ![368836171-d4ab4bc3-12b0-44dc-8edb-9d586d8ba856](https://github.com/user-attachments/assets/335554b2-6dde-4d52-b34d-d1c711e330ad)
 
 <br>
@@ -185,8 +184,21 @@ Time=18 | s[1]=0 s[0]=0 | Inputs: a[0]=1 a[1]=1 a[2]=1 a[3]=1
 ```
 **Output waveform** <br>
 <br>
-![Screenshot 2024-11-15 111538](https://github.com/user-attachments/assets/4f55fc4a-fadd-4eb0-8049-0adffc938892)
+GATE LEVEL :
 
+<img width="1411" height="855" alt="Screenshot 2025-09-02 133241" src="https://github.com/user-attachments/assets/db3c2493-c668-4463-90d0-dfee7ffbc252" />
+
+DATA FLOW :
+
+<img width="1493" height="855" alt="Screenshot 2025-09-02 133302" src="https://github.com/user-attachments/assets/76e5c97a-f407-449b-925c-fa20c039c685" />
+
+BEHAVIORAL :
+
+<img width="1493" height="885" alt="Screenshot 2025-09-02 133326" src="https://github.com/user-attachments/assets/7d03b6b0-7b4a-4655-a123-30204d0ff59d" />
+
+STRUCTURAL :
+
+<img width="1492" height="858" alt="Screenshot 2025-09-02 133349" src="https://github.com/user-attachments/assets/4cb216d5-368d-4297-99d7-02948d72abd1" />
 <br>
 
 **Conclusion:** <br>
