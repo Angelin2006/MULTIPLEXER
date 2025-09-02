@@ -106,9 +106,8 @@ endmodule
 ```
 
 Testbench Implementation:
-4:1 MUX Gate-Level Test bench Implementation
 
-module mux4to1_tb;
+    module mux4to1_tb;
     reg I0_t,I1_t,I2_t,I3_t,S1_t,S2_t;
     wire Y_t;
     mux4to1 dut(.I0(I0_t),.I1(I1_t),.I2(I2_t),.I3(I3_t),.S1(S1_t),.S2(S2_t),.Y(Y_t));
@@ -146,7 +145,7 @@ endmodule
 
 4:1 MUX Data Flow Test bench Implementation
 
-module mux4to1_df_tb;
+    module mux4to1_df_tb;
     reg a,b,c,d,s1,s0;
     wire y;
     mux4to1_df dut(.A(a),.B(b),.C(c),.D(d),.S1(s1),.S0(s0),.Y(y));
@@ -184,7 +183,7 @@ endmodule
 
 4:1 MUX Behavioral Test bench Implementation
 
-module mux4to1_bhv_tb;
+    module mux4to1_bhv_tb;
     reg [0:3]I;
     reg [1:0]S;
     wire Y;
@@ -207,7 +206,8 @@ endmodule
 
 4:1 MUX Structural Test bench Implementation
 
-module mux4to1_str_tb;
+    
+    module mux4to1_str_tb;
     reg [0:3]I;
     reg [1:0]S;
     wire Y;
@@ -233,46 +233,46 @@ endmodule
 Sample Output:
 4:1 MUX Gate-Level Implementation
 
-Time=00 | S1=0 S2=0 | Inputs: I0=1 I1=0 I2=1 I3=0
+    Time=00 | S1=0 S2=0 | Inputs: I0=1 I1=0 I2=1 I3=0
         | out_gate=1
-Time=100 | S1=0 S2=1 | Inputs: I0=1 I1=0 I2=1 I3=0
+    Time=100 | S1=0 S2=1 | Inputs: I0=1 I1=0 I2=1 I3=0
         | out_gate=0
-Time=200 | S1=1 S2=0 | Inputs: I0=1 I1=0 I2=1 I3=0
+    Time=200 | S1=1 S2=0 | Inputs: I0=1 I1=0 I2=1 I3=0
         | out_gate=1
-Time=300 | S1=1 S2=1 | Inputs: I0=1 I1=0 I2=1 I3=0
+    Time=300 | S1=1 S2=1 | Inputs: I0=1 I1=0 I2=1 I3=0
         | out_gate=0
         
 4:1 MUX Data Flow Implementation
 
-Time=00 | s[1]=0 s[0]=0 | Inputs: a=1 b=0 c=1 d=0
+    Time=00 | s[1]=0 s[0]=0 | Inputs: a=1 b=0 c=1 d=0
         | out_dataflow=1
-Time=100 | s[1]=0 s[0]=1 | Inputs: a=1 b=0 c=1 d=0
+    Time=100 | s[1]=0 s[0]=1 | Inputs: a=1 b=0 c=1 d=0
         | out_dataflow=0
-Time=200 | s[1]=1 s[0]=0 | Inputs: a=1 b=0 c=1 d=0
+    Time=200 | s[1]=1 s[0]=0 | Inputs: a=1 b=0 c=1 d=0
         | out_dataflow=1
-Time=300 | s[1]=1 s[0]=1 | Inputs: a=1 b=0 c=1 d=0
+    Time=300 | s[1]=1 s[0]=1 | Inputs: a=1 b=0 c=1 d=0
         | out_dataflow=0
         
 4:1 MUX Behavioral Implementation
 
-Time=00 | S[1]=0 S[0]=0 | Inputs: I[0]=1 I[1]=0 I[2]=1 I[3]=0
+    Time=00 | S[1]=0 S[0]=0 | Inputs: I[0]=1 I[1]=0 I[2]=1 I[3]=0
         | out_behavioral=1
-Time=100 | S[1]=0 S[0]=1 | Inputs: I[0]=1 I[1]=0 I[2]=1 I[3]=0
+    Time=100 | S[1]=0 S[0]=1 | Inputs: I[0]=1 I[1]=0 I[2]=1 I[3]=0
         | out_behavioral=0
-Time=200 | S[1]=1 S[0]=0 | Inputs: I[0]=1 I[1]=0 I[2]=1 I[3]=0
+    Time=200 | S[1]=1 S[0]=0 | Inputs: I[0]=1 I[1]=0 I[2]=1 I[3]=0
         | out_behavioral=1
-Time=300 | S[1]=1 S[0]=1 | Inputs: I[0]=1 I[1]=0 I[2]=1 I[3]=0
+    Time=300 | S[1]=1 S[0]=1 | Inputs: I[0]=1 I[1]=0 I[2]=1 I[3]=0
         | out_behavioral=0
         
 4:1 MUX Structural Implementation
 
-Time=00 | S[1]=0 S[0]=0 | Inputs: I[0]=1 I[1]=0 I[2]=1 I[3]=0
+    Time=00 | S[1]=0 S[0]=0 | Inputs: I[0]=1 I[1]=0 I[2]=1 I[3]=0
         | out_structural=1
-Time=100 | S[1]=0 S[0]=1 | Inputs: I[0]=1 I[1]=0 I[2]=1 I[3]=0
+    Time=100 | S[1]=0 S[0]=1 | Inputs: I[0]=1 I[1]=0 I[2]=1 I[3]=0
         | out_structural=0
-Time=200 | S[1]=1 S[0]=0 | Inputs: I[0]=1 I[1]=0 I[2]=1 I[3]=0
+    Time=200 | S[1]=1 S[0]=0 | Inputs: I[0]=1 I[1]=0 I[2]=1 I[3]=0
         | out_structural=1
-Time=300 | S[1]=1 S[0]=1 | Inputs: I[0]=1 I[1]=0 I[2]=1 I[3]=0
+    Time=300 | S[1]=1 S[0]=1 | Inputs: I[0]=1 I[1]=0 I[2]=1 I[3]=0
         | out_structural=0
         
 Output waveform
