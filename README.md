@@ -107,6 +107,8 @@ endmodule
 
 Testbench Implementation:
 
+4:1 MUX gate level Test bench Implementation
+
     module mux4to1_tb;
     reg I0_t,I1_t,I2_t,I3_t,S1_t,S2_t;
     wire Y_t;
@@ -141,7 +143,7 @@ Testbench Implementation:
         S1_t = 1'b1;
         S2_t = 1'b1;
     end
-endmodule
+    endmodule
 
 4:1 MUX Data Flow Test bench Implementation
 
@@ -179,7 +181,7 @@ endmodule
         s1 = 1'b1;
         s0 = 1'b1;
     end
-endmodule
+    endmodule
 
 4:1 MUX Behavioral Test bench Implementation
 
@@ -202,7 +204,7 @@ endmodule
         I = 4'b1010;
         S = 2'b11;
     end
-endmodule
+    endmodule
 
 4:1 MUX Structural Test bench Implementation
 
@@ -228,7 +230,7 @@ endmodule
         I = 4'b1010;
         S = 2'b11;
      end
-endmodule
+     endmodule
 
 Sample Output:
 4:1 MUX Gate-Level Implementation
